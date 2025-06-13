@@ -1,3 +1,5 @@
+# ML_Projects
+
 **Customer Churn Prediction App**
 
 This project is a customer churn prediction application developed using Python, Streamlit, and machine learning. 
