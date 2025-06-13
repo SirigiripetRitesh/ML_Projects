@@ -27,15 +27,21 @@ st. divider()
 
 predictbutton = st.button("predict")
 
-
 if predictbutton:
     
     gender_selected = 1 if gender == "Female" else 0
+    
     X = [age, gender_selected, tenure, monthlycharge]
+    
     X1 = np.array(X)
+    
     X_array = scaler.transform([X1])
+    
     prediction = model.predict(X_array)[0]
+    
     predicted = "Yes" if prediction == 1 else "No"
+    
     st.write(f"Predicted: {predicted}")
+    
 else:
     st.write("Please enter the values and use predict button")
